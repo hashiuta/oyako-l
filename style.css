@@ -1,26 +1,27 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
+
 body {
-    color: #050505;
-    font-family: "Noto Sans JP", sans-serif;
-    background-color: #fff;
-    line-height: 1.8;
-    margin: 0;  
+  color: #050505;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fff;
+  line-height: 1.8;
+  margin: 0;
 }
+
 img {
-    max-width: 100%;   
+  max-width: 100%;
 }
+
 /* 全体のレイアウト */
 .hero {
   text-align: center;
@@ -31,6 +32,7 @@ img {
 .hero-image {
   position: relative;
 }
+
 .hero-image img {
   width: 100%;
   height: auto;
@@ -42,24 +44,26 @@ img {
   position: absolute;
   bottom: 40px;
   right: 10px;
-  background: rgba(173, 216, 230, 0.85); /* 薄い水色 */
+  background: rgba(173, 216, 230, 0.85);
   color: #000;
   padding: 10px 15px;
   font-size: 2rem;
   border-radius: 4px;
-  border: 1px solid #000; /* 黒枠 */
+  border: 1px solid #000;
 }
 
 /* 下のテキスト部分 */
 .hero-text {
-  background: #f5fdfc; /* 薄いベージュや水色寄りの背景色 */
+  background: #f5fdfc;
   padding: 40px 20px;
 }
+
 .hero-text h1 {
   font-size: 3rem;
-  color: #2196f3; /* 青文字 */
+  color: #2196f3;
   margin-bottom: 10px;
 }
+
 .hero-sub {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -75,54 +79,64 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
 }
+
 .btn-orange:hover {
   background: #e68900;
-  transform: scale(1.05); /* ちょっと拡大 */
+  transform: scale(1.05);/* ちょっと拡大 */
 }
+
 ul {
-    list-style: none;
-    display: inline-block; /* 横幅を見出しの長さに合わせる */
-  text-align: left; /* リストだけ左寄せに */
+  list-style: none;
+  display: inline-block; /* 横幅を見出しの長さに合わせるために使う */
+  text-align: left;
 }
+
 li {
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
 }
+
 h2 {
   font-size: 1.5rem;
   color: #80CFF3;
   margin: 30px auto;
   text-align: center;
 }
+
 .values {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .tour-info {
-  background-color: #FFF9EC; 
-  padding: 20px; 
+  background-color: #FFF9EC;
+  padding: 20px;
   text-align: center;
 }
+
 .tour-content {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 100px;
 }
+
 .tour-image img {
   width: 600px;
   height: 300px;
   border-radius: 4px;
 }
+
 .tour-details dl {
   display: grid;
-  grid-template-columns: 80px auto; /* 左列固定、右列自動 */
+  grid-template-columns: 80px auto;  /* 左列固定、右列自動 */
   gap: 18px 30px;
   text-align: left;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
+
 .tour-details dt {
   font-weight: bold;
 }
@@ -130,7 +144,7 @@ h2 {
 .tour-details dd {
   margin: 0;
 }
-/* セクション全体 */
+
 .photos {
   padding: 20px;
   text-align: center;
@@ -142,53 +156,63 @@ h2 {
   justify-content: center;
   gap: 30px;
 }
+
 /* 1つのfigure */
 .photo-list figure {
   width: 300px;
   text-align: center;
-  margin-top: 10px; 
-  line-height: 1.8;  
+  margin-top: 10px;
+  line-height: 1.8;
 }
 
 /* 画像 */
 .photo-list img {
-  width: 100%;   /* 親の幅いっぱいに広げる（レスポンシブ） */
-  height: auto;  /* 縦横比を保つ */
-  display: block;/* 下の余白をなくしてピタッと表示 */
+  width: 100%;
+  /* 親の幅いっぱいに広げたい時使う*/
+  height: auto;
+  /* 縦横比を保つために */
+  display: block;
+  /* 下の余白をなくしてピタッと表示するため */
 }
-/* キャプション */
+
 .photo-list figcaption {
   padding: 10px;
 }
+
+/* お客様の声 */
+/* 形 */
 .voices {
   background-color: #F0F8F4;
   padding: 20px;
   text-align: center;
-
 }
+
 .voice-list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+
 .voice-card {
   background: #fff;
   padding: 20px;
   width: 300px;
   border-radius: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
 }
+
 .voice-card:hover {
-  transform: translateY(-5px);/*　マウスを乗せたとき浮かせる */
+  transform: translateY(-5px);
+  /*　マウスを乗せたとき浮かせるために使う */
 }
 
 /* アイコン画像 */
 .voice-card img {
   width: 100px;
   height: 100px;
-  border-radius: 50%; /* 丸くする */
+  border-radius: 50%;
 }
 
 /* 名前 */
@@ -204,81 +228,99 @@ h2 {
   line-height: 1.6;
   text-align: left;
 }
+
+/* よくある質問 */
 .faq {
   padding: 20px;
   text-align: center;
 }
+
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2列レイアウトにする */
-  gap: 40px 60px; /* 上下40px、左右60pxの間隔 */
+  grid-template-columns: 1fr 1fr;
+  /* 2列レイアウトにするときに使う */
+  gap: 40px 60px;
 }
+
 .faq-item {
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
 }
+
 .faq-item .q {
   font-weight: bold;
   margin-bottom: 5px;
 }
-.faq-item .q span  {
+
+.faq-item .q span {
   color: red;
   font-weight: bold;
   margin-right: 5px;
 }
+
 .faq-item .a span {
-  color: red; 
+  color: red;
   font-weight: bold;
   margin-right: 5px;
 }
+
+/* 迷っているかたへ */
 .title {
   color: #2AAFEC;
   margin-bottom: 20px;
 }
+
 .catch {
   font-size: 1.3rem;
   color: #2AAFEC;
   font-weight: bold;
 }
+
 .cta-line {
   width: 450px;
   border: 3px solid rgba(255, 165, 0, 0.5);
   margin: 0 auto 20px auto;
 }
+
 .day {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 20px;
-  text-align: left; /* ← 追加！ */
-  display: inline-block; /* ← 中央寄せ内で幅を調整 */
+  text-align: left;
+  display: inline-block;
+  /*中央寄せ内で幅を調整できる */
 }
+
 .note {
   font-size: 0.9rem;
-  font-weight: bold; 
+  font-weight: bold;
   margin-bottom: 30px;
 }
+
 .btn-orange {
   color: #050505;
   margin-bottom: 30px;
 }
+
 .tel {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 .contact-area {
   display: flex;
-  align-items: center; /* 縦の中央揃え */
-  gap: 10px; /* アイコンとボタンの間隔 */
-  justify-content: center; /* 全体を中央寄せ */
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
 /* メールアイコン */
 .mail {
-  width: 38px; /* サイズ */
+  width: 38px;
   height: auto;
 }
 
@@ -291,21 +333,25 @@ h2 {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
 }
+
 .btn-line:hover {
   background: #009900;
 }
+
 /* 768px以下（スマホ＋タブレット縦）用 */
 @media (max-width: 768px) {
-  
+
   .hero-text h1 {
     font-size: 1.6rem;
   }
+
   .hero-sub {
     font-size: 1.2rem;
   }
+
   .hero-tag {
     font-size: 1rem;
     bottom: 20px;
@@ -318,57 +364,60 @@ h2 {
   }
 
   .tour-content {
-    flex-direction: column;/* 縦並びする */
+    flex-direction: column;
+    /* 縦並びする */
     gap: 20px;
     align-items: center;
   }
+
   .tour-image img {
     width: 100%;
     height: auto;
   }
+
   /* ツアー概要（読みやすく） */
   .tour-details dl {
-    gap: 10px 20px;         
+    gap: 10px 20px;
     font-size: 0.95rem;
   }
 
   /* 写真3枚 */
   .photo-list {
-    flex-direction: column;  /* 縦並びする */
+    flex-direction: column;
+    /* 横並びを縦並びするためにつか */
     align-items: center;
     gap: 20px;
   }
+
   .photo-list figure {
     width: 90%;
   }
 
-  
   .voice-list {
-    flex-direction: column;/* お客様の声（横並び→縦並び） */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
   .faq-list {
-    grid-template-columns: 1fr; /* FAQ（2列→1列） */
+    grid-template-columns: 1fr;
+    /* 項目を（2列→1列） */
     gap: 20px;
-    padding: 0 10px;       
+    padding: 0 10px;
   }
 
-  /* CTAタイトル */
   .title {
     font-size: 1.3rem;
   }
+
   .catch {
     font-size: 1.1rem;
   }
 
-  /* CTAの横線 */
   .cta-line {
     width: 80%;
   }
 
-  /* CTAの本文（左揃え） */
   .day,
   .note,
   .tel {
@@ -377,35 +426,36 @@ h2 {
     font-size: 0.95rem;
   }
 
-  /* CTAオレンジボタン */
+
   .btn-orange {
-    width: 100%;/* スマホでは横いっぱい */
+    width: 100%;
+    /* スマホでは横いっぱいに */
     padding: 14px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 1rem;
   }
 
-  /* メールアイコン＋LINEボタン（横→縦） */
   .contact-area {
     flex-direction: column;
     gap: 20px;
   }
+
   .btn-line {
-    width: 100%;/* スマホでは横いっぱい */
+    width: 100%;
     text-align: center;
     font-size: 1rem;
     padding: 14px;
   }
 }
+
 @media (max-width: 420px) {
-  /* ヒーロー見出し */
+
   .hero-text h1 {
     font-size: 1.4rem;
     line-height: 1.4;
   }
 
-  /* 水色帯 */
   .hero-tag {
     font-size: 0.7rem;
     padding: 4px 8px;
@@ -413,14 +463,96 @@ h2 {
     right: 5px;
   }
 
-  /* リストの行間広げる */
+
   ul li {
     line-height: 1.6;
   }
 
-  /* オレンジボタン */
   .btn-orange {
     font-size: 0.95rem;
     padding: 12px;
+  }
+}
+
+/* 420px以下（小型スマホ）用 */
+@media (max-width: 420px) {
+
+
+  body {
+    line-height: 1.6;
+  }
+
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+
+  .btn-orange,
+  .btn-line {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    width: 100%;
+    /* スマホは幅いっぱい */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 20px auto;
+  }
+
+
+  li {
+    font-size: 0.9rem;
+  }
+
+
+  .tour-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tour-details dl {
+    font-size: 0.7rem;
+    gap: 10px 5px;
+  }
+
+  .photo h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .photo-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .voice-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  .faq-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cta-line {
+    width: 80%;
+  }
+
+  .day,
+  .note,
+  .tel {
+    font-size: 0.9rem;
   }
 }
